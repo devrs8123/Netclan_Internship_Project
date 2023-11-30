@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#3F51B5"
+        android:padding="16dp">
+
+        <!-- Menu buttons -->
+        <Button
+            android:id="@+id/menu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu 1"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/menu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu 2"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/menu3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu 3"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Scroll View -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3F51B5"
+        android:padding="16dp">
+
+        <!-- Footer content -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Footer"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>
